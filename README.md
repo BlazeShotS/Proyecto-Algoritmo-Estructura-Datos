@@ -1,5 +1,5 @@
 Pagina Principal:
-![image](https://github.com/user-attachments/assets/449bdde6-ae55-4644-8e6f-f86dda6d476b)
+![image](https://github.com/user-attachments/assets/2c6f01a6-7a0b-4e38-8c0c-6b18107981f6)
 Panel de seleccion:
 ![image](https://github.com/user-attachments/assets/05f4cbba-d2d6-4ae2-8312-7c9267180fba)
 Metodo Burbuja:
