@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Burbuja</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+
+
+    <h1 class="titulo">Ordenamiento de numeros</h1>
+    <div class="contenedor">
+        <h2>Ingresar Datos</h2>
+        <label for="inputNumber">Número: </label>
+        <input type="number" id="inputNumber">
+        <button onclick="addNumber()">Agregar</button>
+
+        <h3>Tabla de Entrada</h3>
+        <table id="inputTable">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Ordenar Datos</h2>
+        <button onclick="btnOrdenarActionPerformed()">Ordenar</button>
+
+        <h3>Tabla Ordenada</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Número Ordenado</th>
+                </tr>
+            </thead>
+            <tbody id="sortedTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Hash</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .TablaRegistro, .TablaRegistro * {
+                visibility: visible;
+            }
+            .TablaRegistro {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">Registro De Productos De Una Libreria</h1>
+    
+    <div class="contenedor">   
+        <form id="formulario" class="form">
+            <label for="Codigo">Ingrese el Código</label>
+            <input type="text" id="Codigo" name="Codigo" placeholder="Ingrese un código de 4 dígitos Ejemplo: (8515)">
+
+            <label for="Nombre">Ingrese el Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese el Nombre">
+
+            <label for="TipoProducto">Ingrese el Tipo de producto</label>
+            <input type="text" id="TipoProducto" name="TipoProducto" placeholder="Ingrese el Tipo de Producto">
+
+            <label for="PrecioUnitario">Ingrese el Precio unitario</label>
+            <input type="number" id="PrecioUnitario" name="PrecioUnitario" placeholder="Ingrese el Precio Unitario">
+
+            <label for="PrecioDocena">Ingrese el precio por docena</label>
+            <input type="number" id="PrecioDocena" name="PrecioDocena" placeholder="Ingrese el Precio por Docena">
+
+            <!-- Campo para ingresar el índice -->
+            <label for="Índice">Consulte por Indice</label>
+            <input type="number" id="Índice" placeholder="Índice" style="border-radius: 32px; border:1px solid #ccc">
+        </form>
+
+        <div class="botones">
+            <button onclick="Insertar()">Insertar</button>
+            <button onclick="Consultar()">Consultar</button>
+            <button onclick="Eliminar()">Eliminar</button>
+            <button onclick="Modificar()">Modificar</button>
+            <button onclick="Limpiar()">Limpiar</button>
+            <button onclick="Salir()">Salir</button>
+            <button onclick="Imprimir()">Imprimir</button> <!-- Nuevo botón de imprimir -->
+        </div>
+
+        <hr>
+
+        <table class="TablaRegistro" border="1px" style="margin-top: 29px;">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre del Producto</th>
+                    <th>Tipo de Producto</th>
+                    <th>Precio Unitario</th>
+                    <th>Precio por Docena</th>
+                    <th>Indice</th>
+                </tr>
+            </thead> 
+            <tbody id="resultadoBody">
+                <!-- INSERTARA DATOS -->
+            </tbody>
+        </table>
+    </div>  
+
+    <img src="img/GIF1.gif" alt="GIF Ejemplo">
+
+    <script src="script.js"></script>
+</body>
+</html>

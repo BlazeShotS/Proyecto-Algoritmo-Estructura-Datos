@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: url('img/Imagen4.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que la imagen de fondo esté fija al desplazarse */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    position: fixed; /* Se queda posicionado arriba */
+    top: 0; /* Se asegura de que esté en la parte superior */
+    z-index: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 30px;
+}
+
+.navbar a {
+    display: block;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; /* para las mayúsculas */
+    font-size: 19px; /* Tamaño de letra */
+}
+
+.navbar a:hover {
+    background: rgba(128, 144, 177, 0.87);
+    border-radius: 12px;
+}
+
+.logo a {
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    background: rgb(108, 108, 170);
+}
+
+.contenedor {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    max-width: 880px; /* Limita el ancho máximo */
+    margin: auto; /* Centra horizontalmente */
+    margin-top: 120px; /* Espacio superior */
+    padding: 4rem;
+    box-sizing: border-box;
+    text-align: center; /* Centra el contenido */
+}
+
+.titulo {
+    color: white;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.subtitulo {
+    font-family: cursive;
+}
+
+.Ingresar {
+    display: inline-block;
+    padding: 15px 38px;
+    margin: 28px;
+    margin-top: 50px;
+    border: 3px solid black;
+    background-color: rgba(22, 41, 70, 0.795);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Ingresar:hover {
+    background-color: rgba(22, 41, 70, 0.562);
+    transform: scale(1.05);
+}
+
+
+
+/* Estilos adicionales PARA EL ICONO DE LAS 3 LINEAS CUANDO SE REDUCE MUCHO */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.navbar.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .navbar a:hover {
+        background: rgba(128, 144, 177, 0.87);
+    }
+
+    .head {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

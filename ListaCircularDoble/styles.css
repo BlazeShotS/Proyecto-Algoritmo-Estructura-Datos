@@ -1,0 +1,109 @@
+body {
+    background-image: url('img/Imagen1.jpg');
+    background-size: cover; /* Cubre todo el body */
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen */
+    /* height: 100vh; */
+    margin: 0; /* Asegura que no haya márgenes extras */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Titulo {
+    text-align: center;
+    color: black;
+    font-size: 38px;
+    font-family: cursive;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.contenedor {
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    background: #202020;
+    border-radius: 17px;
+    overflow: hidden; /* Asegura que la imagen circular se muestre correctamente */
+}
+
+.imagen img {
+    max-width: 100%; /* Tamaño de la imagen del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 50%; /* Mantiene la forma circular */
+}
+
+.NameMusica {
+    font-family: fantasy;
+    font-size: 20px;
+    color: rgb(238, 229, 229);
+}
+
+.control button, .btnImprimir {
+    font-family: fantasy;
+    font-size: 25px;
+    margin: 15px 10px;
+    border-radius: 100px;
+    background: rgb(151, 141, 141);
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.control button:hover, .btnImprimir:hover {
+    background-color: #534e4e;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .Titulo {
+        font-size: 32px;
+        margin: 15px 0;
+    }
+
+    .contenedor {
+        max-width: 90%;
+        padding: 0.5rem;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .NameMusica {
+        font-size: 18px;
+    }
+
+    .control button, .btnImprimir {
+        font-size: 20px;
+        margin: 10px 5px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Titulo {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+
+    .contenedor {
+        max-width: 95%;
+        padding: 0.5rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .NameMusica {
+        font-size: 16px;
+    }
+
+    .control button, .btnImprimir {
+        font-size: 18px;
+        margin: 8px 4px;
+        padding: 6px 12px;
+    }
+}

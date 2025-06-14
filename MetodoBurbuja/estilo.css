@@ -1,0 +1,80 @@
+body{
+    background-image: url(img/Imagen3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 100vh;
+    
+}
+.contenedor{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 77vh;
+    margin: 0;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+label {
+    margin-right: 10px;
+    color: white;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: calc(100% - 110px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 7px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #1334669d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0d3168c7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    input[type="number"], button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

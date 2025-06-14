@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Circular Simple</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <h1 class="Titulo"> Reproductor de Música </h1>
+        <div class="contenedor">
+
+            <div class="imagen"> 
+                <img  src="img/Imagen2.jpg" alt="ImagenMusica">
+            </div>
+            
+            <div class="NameMusica" id="NamePistaActual"> </div> <!--Para que salga el nombre de la cancion mientras se reproduce-->
+        
+            <br>
+            <div class="music-player">
+                <audio id="audioPlayer" controls> <!--Usamos la etiqueta audio y el controls es para que me salga la casilla -->
+                    <source src="" type="audio/mpeg">            
+                    Tu navegador no soporta el elemento de audio. <!--si no usamos la etiqueta audio saldra este mensaje-->
+                </audio>
+            
+                <div class="control">
+                    <button id="AtrasBtn" onclick="AtrasBtn()"> ◄◄</button> 
+                    <button id="playPauseBtn" onclick="playPause()">Play</button>
+                    <button id="AdelanteBtn" onclick="AdelanteBtn()"> ►► </button>
+                </div>
+            </div>
+
+            <button class="btnImprimir" onclick="ImprimirPagina()">Imprimir</button>
+
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

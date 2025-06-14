@@ -1,0 +1,143 @@
+body {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.titulo {
+    text-transform: uppercase;
+    font-family: fantasy;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin: 2rem 0;
+}
+
+.contenedor {
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color:  rgba(38, 54, 70, 0.979);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    border: 3px solid black;
+
+}
+
+.contenedor:hover {
+    background-color:rgba(34, 42, 53, 0.712);
+    transform: scale(1.01);
+}
+
+.form {
+    margin: 13px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family:unset;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #f1f1d2f6;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.botones {
+    margin: 12px 0;
+    text-align: center;
+}
+
+.botones button {
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 12px;
+    border-radius: 13px;
+    background:  rgba(20, 44, 80, 0.678);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    width: calc(100% - 24px);
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    transform: scale(1.02);
+    font-family: fantasy;
+}
+
+.TablaRegistro {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Esto asegura que la tabla no exceda el ancho del contenedor */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Esto asegura que el texto dentro de las celdas no exceda el ancho de la celda */
+    color: #ccc;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+
+    .botones button {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2em;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .botones button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

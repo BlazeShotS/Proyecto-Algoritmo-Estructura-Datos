@@ -1,0 +1,48 @@
+body {
+    background-image: url('img/Imagen1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Esto asegura que la imagen de fondo permanezca fija */
+    height: 100vh; /* Asegura que el body tome el 100% de la altura de la ventana */
+    margin: 0;
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.titulo{
+    color: white;
+    font-size: 35px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    margin: 2px;
+    text-align: center;
+}
+
+.contenedor {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    max-width: 600px; /* Limita el ancho máximo */
+    padding: 3rem;
+    box-sizing: border-box;
+    text-align: center; /* Centrar el texto */
+}
+
+
+.Contacto {
+    display: inline-block; /* Asegura que los enlaces sean elementos en línea */
+    padding: 22px 38px; /* Combina padding-top y padding-bottom */
+    margin: 28px;
+    border: 3px solid black;
+    background-color: #202020;
+    color: white;
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Contacto:hover {
+    background-color: rgba(22, 41, 70, 0.781);
+    transform: scale(1.05);
+}
